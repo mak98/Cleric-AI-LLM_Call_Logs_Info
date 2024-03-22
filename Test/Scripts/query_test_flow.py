@@ -1,8 +1,7 @@
-import requests
-
+from query_get_question_and_facts import get_question_and_facts
+from query_submit_question_and_documents import submit_question_and_documents
 
 url = 'http://localhost:8080//submit_question_and_documents'
-
 data = {
     "question": "What are our product design decisions?",
     "documents": [
@@ -13,9 +12,8 @@ data = {
     "autoApprove": True
 }
 
-response = requests.post(url, json=data)
+submit_question_and_documents(url,data)
 
-if response.status_code == 200:
-    print("Response:", response.text)
-else:
-    print("Failed to submit question and documents. Status code:", response.status_code)
+
+url = 'http://localhost:8080/get_question_and_facts'
+get_question_and_facts(url)
