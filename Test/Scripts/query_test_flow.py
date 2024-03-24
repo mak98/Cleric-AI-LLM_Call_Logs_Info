@@ -1,5 +1,6 @@
 from query_get_question_and_facts import get_question_and_facts
 from query_submit_question_and_documents import submit_question_and_documents
+import time
 
 url = 'http://localhost:8080//submit_question_and_documents'
 data = {
@@ -16,4 +17,7 @@ submit_question_and_documents(url,data)
 
 
 url = 'http://localhost:8080/get_question_and_facts'
+get_question_and_facts(url)
+
+time.sleep(10)
 get_question_and_facts(url)
