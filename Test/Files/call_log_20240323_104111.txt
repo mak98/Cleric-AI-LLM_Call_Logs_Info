@@ -1,0 +1,11 @@
+1
+00:11:25,430 --> 00:11:45,520
+Alice: Let's discuss our transportation strategy now. We need to ensure timely deliveries to our customers while minimizing transportation costs. I suggest we evaluate different shipping providers and negotiate better rates.
+
+2
+00:11:50,450 --> 00:12:00,190
+Bob: Absolutely, Alice. We should also consider implementing a real-time tracking system for our shipments. This will provide visibility into the entire delivery process and allow us to address any issues promptly.
+
+3
+00:12:05,340 --> 00:12:06,040
+Eva: I'm on board with that plan. Real-time tracking combined with cost-effective shipping solutions will enhance our logistics operations significantly.

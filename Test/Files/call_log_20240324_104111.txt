@@ -1,0 +1,11 @@
+1
+00:12:30,430 --> 00:12:50,520
+Alice: Good afternoon, team. Building upon our previous discussions, let's address our distribution network optimization. We need to ensure that our distribution centers are strategically located to minimize transportation costs and delivery times.
+
+2
+00:12:55,450 --> 00:13:05,190
+Bob: I agree, Alice. Optimizing our distribution network is critical for efficient supply chain management. Additionally, I propose we invest in route optimization software to maximize delivery efficiency and minimize fuel consumption.
+
+3
+00:13:10,340 --> 00:13:11,040
+Eva: That sounds like a solid plan, Bob. We should also consider implementing a cross-docking strategy to reduce handling costs and improve order fulfillment speed.
