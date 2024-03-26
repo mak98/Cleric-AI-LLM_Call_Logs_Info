@@ -1,11 +1,11 @@
 What are our product design decisions?
-http://localhost:8000/LLMLogsInformationExtractor/Test/Files/call_log_20240314_104111.txt
-http://localhost:8000/LLMLogsInformationExtractor/Test/Files/call_log_20240315_104111.txt
-http://localhost:8000/LLMLogsInformationExtractor/Test/Files/call_log_20240316_104111.txt
+https://github.com/mak98/Cleric-AI-LLM_Call_Logs_Info/blob/master/Test/Files/call_log_20240314_104111.txt
+https://github.com/mak98/Cleric-AI-LLM_Call_Logs_Info/blob/master/Test/Files/call_log_20240315_104111.txt
+https://github.com/mak98/Cleric-AI-LLM_Call_Logs_Info/blob/master/Test/Files/call_log_20240316_104111.txt
 
 What are the decisions for cost optimization?
-http://localhost:8000/LLMLogsInformationExtractor/Test/Files/call_log_20240321_104111.txt
-http://localhost:8000/LLMLogsInformationExtractor/Test/Files/call_log_20240322_104111.txt
-http://localhost:8000/LLMLogsInformationExtractor/Test/Files/call_log_20240323_104111.txt
-http://localhost:8000/LLMLogsInformationExtractor/Test/Files/call_log_20240324_104111.txt
-http://localhost:8000/LLMLogsInformationExtractor/Test/Files/call_log_20240325_104111.txt
+https://github.com/mak98/Cleric-AI-LLM_Call_Logs_Info/blob/master/Test/Files/call_log_20240321_104111.txt
+https://github.com/mak98/Cleric-AI-LLM_Call_Logs_Info/blob/master/Test/Files/call_log_20240322_104111.txt
+https://github.com/mak98/Cleric-AI-LLM_Call_Logs_Info/blob/master/Test/Files/call_log_20240323_104111.txt
+https://github.com/mak98/Cleric-AI-LLM_Call_Logs_Info/blob/master/Test/Files/call_log_20240324_104111.txt
+https://github.com/mak98/Cleric-AI-LLM_Call_Logs_Info/blob/master/Test/Files/call_log_20240325_104111.txt

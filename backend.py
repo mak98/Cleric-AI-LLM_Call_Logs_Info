@@ -1,5 +1,3 @@
-from firebase_admin import initialize_app, db
-from firebase_functions import https_fn
 from flask import Flask, request, jsonify,make_response
 import json
 from informationExtract import LLMBot
@@ -54,4 +52,4 @@ def get_logs():
     print(formatted_logs) 
     return jsonify(formatted_logs)
 if __name__ == '__main__':
-    app.run(debug=True,port=8080)
+    app.run(host="0.0.0.0",port=8080)

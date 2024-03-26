@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import time
 
-BACKEND_URL = 'http://localhost:8080'
+BACKEND_URL = 'https://llmlogsinformationextractor-sparkling-darkness-5253.fly.dev'
 def submit_question_and_documents():
     st.title('Submit Question and Documents')
     question = st.text_input('Enter your question:')
@@ -38,7 +38,7 @@ def display_facts():
             status = data.get('status')
             request_limit = 5
             while status=="processing" and response.status_code==200 and request_limit>0:
-                time.sleep(2)
+                time.sleep(3)
                 response = requests.get(f'{BACKEND_URL}/get_question_and_facts')
                 request_limit-=1
                 data = response.json()
