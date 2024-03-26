@@ -9,7 +9,7 @@ This repository contains a Python application powered by a Language Model (LLM) 
 - **Test:** Includes test scripts and files necessary for testing the application.
   - **Files:** Holds test call log files and sample inputs for the frontend.
   - **Scripts:** Contains test scripts along with a file server code.
-- **main.py:** Initiates all servers and the frontend, allowing for easy execution with a single command.
+
 
 ## Setup
 
@@ -36,6 +36,100 @@ streamlit run app.py
 python3 Test/Scripts/filerServer.py
 ```
 
+## Deployment
+
+- A Dockerfile is provided for deploying the backend.
+- The frontend can be deployed using Streamlit Share. Simply share your Streamlit app to Streamlit Share for hosting.
+## Endpoints
+
+### 1. Submit Question and Documents
+
+**URL:** `/submit_question_and_documents`
+
+**Method:** `POST`
+
+**Description:** Submit a question and associated documents for processing.
+
+**Request Body:**
+```json
+{
+    "question": "What is the capital of France?",
+    "documents": [
+                  "https://example.com/document1.txt",
+                  "https://example.com/document2.txt",
+                  "https://example.com/document2.txt"
+                ],
+}
+```
+
+**Response:**
+```json
+{
+    "question": "What is the capital of France?",
+    "status": "processing"
+}
+```
+
+### 2. Get Question and Facts
+
+**URL:** `/get_question_and_facts`
+
+**Method:** `GET`
+
+**Description:** Retrieve the submitted question and processing status, along with computed facts if available.
+
+If server is still computing:
+**Response:**
+```json
+{
+    "question": "What is the capital of France?",
+    "status": "processing"
+}
+```
+If server is done computing:
+```json
+{
+    "question": "Some question?",
+    "factsByDay":{ 
+      "YYYY-MM-DD": [
+        "Fact",
+        "Fact",
+        "Fact"
+      ],
+      "YYYY-MM-DD":  [
+        "Fact",
+        "Fact",
+        "Fact"
+      ],
+      "YYYY-MM-DD": [
+        "Fact"
+      ]
+      }
+    ,
+    "status": "done"
+}
+```
+### 3. Get Logs
+
+**URL:** `/get_logs`
+
+**Method:** `GET`
+
+**Description:** Retrieve logs of processed documents.
+
+**Response:**
+```json
+[
+    {
+        "source": "https://example.com/document1.txt",
+        "content": "Lorem ipsum dolor sit amet..."
+    },
+    {
+        "source": "https://example.com/document2.txt",
+        "content": "Sed ut perspiciatis unde omnis iste natus error..."
+    }
+]
+```
 ## How It Works
 
 1. **Backend (`backend.py`):** 
